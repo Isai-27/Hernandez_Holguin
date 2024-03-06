@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Registro</h2>
+        <form id="registro_productos" action="guardar_productos.php" method="post">
+            <div class="form-group">
+                <label for="cod_producto">Código de Producto:</label>
+                <input type="text" class="form-control" id="cod_producto" name="cod_producto">
+            </div>
+            <div class="form-group">
+                <label for="nom_producto">Nombre del Producto:</label>
+                <input type="text" class="form-control" id="nom_producto" name="nom_producto">
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" class="form-control" id="precio" name="precio">
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" class="form-control" id="cantidad" name="cantidad">
+            </div>
+            <div class="form-group">
+                <label for="cod_categoria">Categoria:</label>
+                <input type="text" class="form-control" id="cod_categoria" name="cod_categoria">
+            </div>
+            <div class="form-group">
+                <label for="fecha_elab">Fecha de Elaboración:</label>
+                <input type="date" class="form-control" id="fecha_elab" name="fecha_elab">
+            </div>
+            <div class="form-group">
+                <label for="fecha_cad">Fecha de Caducidad:</label>
+                <input type="date" class="form-control" id="fecha_cad" name="fecha_cad">
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" onclick="validar_producto()">Guardar</button>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>
